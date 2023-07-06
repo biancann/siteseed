@@ -11,6 +11,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.15",
     "@lottiefiles/react-lottie-player": "^3.5.3",
+    "@onflow/fcl": "^1.4.1",
     "ai": "^2.1.14",
     "autoprefixer": "10.4.14",
     "eslint": "8.44.0",

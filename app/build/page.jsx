@@ -1,20 +1,27 @@
 "use client";
 
+import "../../flow/config";
+import * as fcl from "@onflow/fcl"
 import Logo from "@/components/logo";
 import { Icon } from "@iconify/react";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useEffect, useRef, useState } from "react";
 import { useChat } from "ai/react";
 import { Controls, Player } from "@lottiefiles/react-lottie-player";
+import { useRouter } from "next/navigation";
 
 export default function Page() {
+  const router = useRouter();
+  const [user, setUser] = useState({ loggedIn: undefined });
   const [breakpoint, setBreakpoint] = useState("desktop");
   const [openGenerate, setOpenGenerate] = useState(false);
-
+  
   const frameRef = useRef();
   const { messages, input, handleInputChange, handleSubmit, isLoading } = useChat({
     api: "/api/chat",
   });
+  
+  useEffect(() => fcl.currentUser.subscribe(setUser), []);
 
   useEffect(() => {
     if (messages) {
@@ -31,6 +38,14 @@ export default function Page() {
       setOpenGenerate(false);
     }
   }, [isLoading]);
+
+  useEffect(() => {
+    if (user?.loggedIn !== undefined) {
+      if (user?.loggedIn !== true) {
+        return router.push('/');
+      }
+    }
+  }, [user, router]);
 
   return (
     <main className="min-h-screen bg-slate-100">
