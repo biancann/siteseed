@@ -1,0 +1,453 @@
+body {
+    font-family: "Inter", sans-serif;
+  }
+  
+  .ml-3 {
+    margin-left: 0.75rem;
+  }
+  
+  .text-blue {
+    color: #2563eb;
+  }
+  
+  .py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  
+  .bg-white {
+    background: white;
+  }
+  
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .navbar-center {
+    position: relative;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #ffffff;
+    color: #374151;
+    width: 100%;
+  }
+  
+  .navbar-center .navbar-container {
+    width: 100%;
+    display: flex;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80rem;
+  }
+  
+  .navbar-center nav {
+    display: flex;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    margin-left: 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .navbar-center nav a {
+    position: relative;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    color: #4b5563;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin-left: 1.25rem;
+  }
+  
+  .navbar-center nav a:hover {
+    color: #111827;
+  }
+  
+  .navbar-center .navbar-action {
+    display: inline-flex;
+    position: relative;
+    z-index: 10;
+    margin-left: 0.875rem;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    position: relative;
+    z-index: 10;
+    color: #000000;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 800;
+    line-height: 1;
+    align-items: center;
+    width: auto;
+    user-select: none;
+  }
+  
+  .btn-blue {
+    display: inline-flex;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.375rem;
+    border-width: 1px;
+    border-color: #1d4ed8;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .btn-blue:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .btn-white {
+    display: inline-flex;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #ffffff;
+    color: #4b5563;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.375rem;
+    border-width: 1px;
+    border-color: #e5e7eb;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .btn-white:hover {
+    background-color: #f9fafb;
+  }
+  
+  .hero {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-color: #ffffff;
+  }
+  
+  .hero .hero-container {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    max-width: 72rem;
+  }
+  
+  .hero .hero-container .hero-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .hero .hero-half {
+    width: 100%;
+  }
+  
+  .hero .hero-img-wrapper {
+    margin-top: 1.5rem;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    border-radius: 0.375rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  
+  .hero h1 {
+    color: #111827;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero h1 span {
+    color: #1d4ed8;
+  }
+  
+  .hero p {
+    margin-left: auto;
+    margin-right: auto;
+    color: #6b7280;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .features {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #ffffff;
+  }
+  
+  .features h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    text-align: center;
+  }
+  
+  .features p {
+    margin-top: 0.5rem;
+    color: #4b5563;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    text-align: center;
+  }
+  
+  .features .grid {
+    display: grid;
+    margin-top: 2.5rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+  }
+  
+  .features .box {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 2rem;
+    border-radius: 0.5rem;
+  }
+  
+  .features .box p {
+    color: #6b7280;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+  
+  .features .box h4 {
+    color: #374151;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: bold;
+  }
+  
+  .features .box .icon {
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background-color: #2563eb;
+    display: inline-block;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+  .pricing {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #ffffff;
+  }
+  
+  .pricing h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    text-align: center;
+  }
+  
+  .pricing p {
+    margin-top: 0.5rem;
+    color: #4b5563;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    text-align: center;
+  }
+  
+  .pricing .grid {
+    display: grid;
+    margin-top: 2.5rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+  }
+  
+  .pricing .box {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 2rem;
+    border-radius: 0.5rem;
+  }
+  
+  .pricing .box h3 {
+    margin: 0;
+    color: #000000;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 1.25;
+  }
+  
+  .pricing .box p {
+    margin-top: 0.75rem;
+    color: #333;
+    line-height: 1.75rem;
+  }
+  
+  .pricing .box h4.price {
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 1rem 0;
+  }
+  
+  .pricing .box h4.price span {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  
+  .pricing .box .btn {
+    width: 100%;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+  }
+  
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  
+    .hero .hero-container .hero-wrapper {
+      margin-left: -0.75rem;
+      margin-right: -0.75rem;
+    }
+  
+    .hero h1 {
+      font-size: 3rem;
+      line-height: 1;
+    }
+  
+    .hero p {
+      max-width: 28rem;
+    }
+  
+    .features .grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  
+    .pricing .grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  
+    .navbar-center .navbar-container {
+      flex-direction: row;
+    }
+  
+    .navbar-center nav {
+      position: absolute;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-left: -1.25rem;
+    }
+  
+    .navbar-center .navbar-action {
+      margin-left: 1.25rem;
+    }
+  
+    .hero {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+    .hero .hero-half {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+      width: 50%;
+    }
+  
+    .hero h1 {
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+    }
+  
+    .hero p {
+      max-width: 48rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1024px;
+    }
+  
+    .navbar-center .navbar-action {
+      justify-content: flex-end;
+    }
+  
+    .hero h1 {
+      font-size: 3rem;
+      line-height: 1;
+    }
+  
+    .hero p {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
+  
+    .features .grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  
+    .pricing .grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
+  
+    .hero .hero-container {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+  
+    .hero h1 {
+      font-size: 3.75rem;
+      line-height: 1;
+    }
+  }
+  
